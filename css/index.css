@@ -1,0 +1,849 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #484848;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+.covid {
+    padding: 20px 80px;
+    text-decoration: underline;
+    text-align: center;
+    background-color: #fff;
+}
+
+section {
+    
+}
+
+/*  ####################################     Header section   ################################# */
+
+header {
+    background: url('../images/backgroundimg.webp');
+    background-size: cover;
+    background-position: center;
+    height: 85.5vh;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    height: 80px;
+    margin: 0 80px;
+}
+
+.logo {
+    height: 80px;
+    width: 140px;
+    display: flex;                         /*   1. logo  */
+    align-items: center;
+    justify-items: center;
+}
+
+ /* ************************************ 2. NAVIGATION LINKS   ***********************************/ 
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;                                             
+    align-items: center;  
+}
+
+
+
+nav .nav-links {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 80px;
+    justify-content: center;
+    font-size: 16px;  
+}
+
+nav .nav-links .links {
+    padding: 10px 16px;
+    height: 40px;   
+    position: relative; 
+    transition: color 0.4s ease;
+}
+
+.links:hover {
+   color: #ffffff90;
+}
+.links {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.links::before, .links::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    background-color: #ccc;
+    height: 2px;
+    width: 0px;
+    transition: 0.1s ease-in-out all;
+}
+
+
+.links::before {
+    left: 50%;
+}
+  
+.links::after {
+    right: 50%;
+}
+  
+.links:hover::after, div:hover::before {
+    width: 2px;
+}
+
+.links:first-child::after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 18px;
+    background-color: #fff;
+    left: 45%;
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;  
+}
+
+
+.links:first-child:hover {
+    cursor: default;
+    color: #fff;
+}
+
+
+/* ***********************************  3. USER OPTIONS  ************************************* */
+.user-links {
+    display: flex;
+    justify-items: center;
+    height: 80px;
+    width: 140px;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+   
+}
+
+.user-links .location {
+    display: flex;
+    justify-items: center;
+    height: 42px;
+    width: 61px;  
+    align-items: center;
+    align-content: center;
+    margin-right: 5px;
+}
+
+.user-links .location .globe{
+    padding: 0 5px;
+    margin-left: 10px;
+}
+
+.user-links .location:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 22px;
+}
+
+.user-links .user {
+    display: flex;
+    justify-items: center;
+   
+}
+
+.user .user-face i {
+    font-size: 30px;
+} 
+.down i {
+    font-size: 9px;
+     
+} 
+.down {
+    margin-top: -5px;
+}
+
+.user {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: grey;
+    height: 42px;
+    width: 77px;
+    border-radius: 21px;
+}
+.user div {
+    padding: 5px 5px 5px 12px;
+}
+
+.menu i {
+    color: #000000;
+}
+
+/* *********************************  4. SERACHING  TAB  ************************************** */
+
+nav .search-bar {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 32px;
+    position: absolute;
+    top: 138px;
+    color: #000000;
+}
+
+.search {
+    color: white;
+    background-color: #FF385C;
+    height: 16px;
+    width: 16px;  
+}
+
+nav .search-bar .tab:nth-child(1) {
+    padding: 14px 32px;
+    width: 263.33px;
+}
+
+
+nav .search-bar .tab {
+    padding: 14px 24px;
+    height: 64px;
+    width: 173.72px;
+    cursor: pointer;
+    position: relative;
+    
+   
+}
+
+.tab:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 32px;
+    top: 25%;
+    background-color: #ebebeb;
+}
+
+.tab:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 32px;
+    top: 25%;
+    background-color: #ebebeb;
+}
+
+.tab:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 32px;
+    top: 25%;
+    background-color: #ebebeb;
+}
+
+
+nav .search-bar .tab:hover:nth-child(1) + .tab:nth-child(1)::after {
+    width: 0px;
+ } 
+
+.tab div:first-child {
+    font-weight: 600;
+    font-size: 12px;
+    color: #222222;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    padding-bottom: 2px;
+}
+
+.tab div:last-child {
+    color: #717171;
+    width: 100%;
+   
+}
+
+input {
+    display: block ;
+    border: none ;
+    margin: 0px ;
+    padding: 0px ;
+    width: 100% ;
+    background: none ;
+    color: #717171 ;
+    outline: none;
+    height: 18px;
+}
+
+
+
+nav .search-bar .tab:last-child {
+    padding: 8px;
+    width: 64px;
+    border: none;   
+}
+
+nav .search-bar .tab:hover {
+    background-color: #EBEBEB;
+    border-radius: 32px;
+}
+
+nav .search-bar .tab:last-child:hover {
+    background-color: #ffffff;
+}
+
+nav .search-bar .tab .tab-4 {
+    background-color: #FF385C;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+nav .search-bar .tab .tab-4:hover {
+    background-color: #f01b6d;
+}
+
+nav .search-bar .tab .tab-4:hover  .search {
+    background-color: #f01b6d;
+}
+.pink-search {
+    border: none;
+}
+
+.search {
+    font-size: 16px;
+
+}
+/************************************ Hero text section *******************************************/
+
+.hero-text {
+    position: absolute;
+    top: 46%;
+    left: 80px;
+    color: #fff;
+}
+
+.h1 {
+    width: 300px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.span {
+    margin: 18px 0px;
+    height: 36px;
+    width: 300px;
+
+}
+
+.explore {
+    padding: 8px 16px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #222222;
+    cursor: pointer;
+    width: fit-content;
+    transition:box-shadow 0.2s ease;
+}
+
+.explore:hover {
+    background-color: #EBEBEB;
+}
+
+.explore:active{
+    transform: scale(0.96);
+    
+}
+/* *********************************** Picture Section   *************************************** */
+
+.picture {
+    width: 100%;
+    height: 389.77px;
+    
+      
+}
+
+.container::-webkit-scrollbar {
+    width: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    margin-top: 26px;
+    height: 357.77px;
+    overflow-x : auto;
+    overflow-y: auto;
+    
+}
+
+.container img {
+    height: 255.77px;
+    width: 383.66;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+} 
+
+.image .heading {
+    font-size: 18px;
+    color: #222222;
+    font-weight: 600;
+}
+
+.image {
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 22px;  
+    height: 345.77px;
+    cursor: pointer;
+    margin: 0px 10px;
+    margin: 10px;
+}
+
+.text {
+    padding: 12px 16px 16px;
+    width: 351.66px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.text div:last-child {
+    margin-top: 4px;
+}
+
+/* *******************************  Online Experiences Section  ***************************** */ 
+
+.onlineexp {
+   
+    background-color: #000000;
+    
+}
+
+.on-container {
+    height: 870.5px;
+    color: #fff;
+    margin: 54px 0 0;
+    padding: 64px 0 ;
+  
+}
+
+.sec-container {
+    padding: 0 80px;
+    height: 726.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.third-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.pic {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic div:first-child {
+    font-size: 32px;
+}
+
+.explore-all {
+    padding: 8px 16px;
+    background-color: #000000;
+    border-radius: 10px;
+    border:1px solid #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition:box-shadow 0.2s ease;
+}
+
+.explore-all:hover {
+    background-color: rgb(113,113,113);
+}
+
+.explore-all:active {
+    transform: scale(0.96);
+    background-color: rgb(113,113,113);
+}
+
+.meet {
+    width: 440px;
+    margin: 4px 0 0;
+    height:60px;
+    font-size: 18px;
+}
+
+.row {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 578.5px 289.25px 289.25px;
+    grid-template-rows: 289.25px 289.25px;
+    grid-gap: 16px;
+
+}
+
+.items  {
+    font-size: 16px;
+    background-color: #222222;
+    border-radius: 16px;
+    
+}
+
+.items img {
+    border-radius: 16px 16px 0 0;
+    vertical-align: middle;
+   
+}
+.items div {
+    margin: 16px;
+    line-height: 20px;
+}
+
+.item1 {
+    width: 578.25;
+    height: 594.5px;
+
+}
+.item2 {
+   height: 289.25px;
+   width: 289.25px;
+   
+}
+.item3 {
+    height: 289.25px;
+    width: 289.25px;
+            
+}
+.item4 {
+   height: 289.5px;
+   width: 594.5px;
+   grid-column-start: 2;
+   
+}
+/********************************  host hero section  *******************************************/
+.third {
+    height: 326px;
+    display: flex;
+
+}
+.third-cover {
+    display: flex;
+    padding: 0 80px;
+    align-items: center;
+    justify-items: center;
+}
+
+.third-cover div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 166px;
+}
+
+.third-cover  div:first-child {
+    width: 602.5px;
+    padding: 0 16px 0 0;
+}
+
+h1 {
+    font-size: 32px;
+    width: 440px;
+    height: 108px;
+    color: #222222;
+}
+
+.third-cover div div:last-child a {
+    text-decoration: none;
+    padding: 7px 15px;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 8px;
+    color: rgb(34,34,34);
+    transition: box-shadow 0.2s ease 0s;
+    outline: none;
+    font-weight: 400;
+
+}
+
+.third-cover div div:last-child {
+    margin: 24px 0 0;
+}
+
+.third-cover div:last-child {
+   
+    width: 586.5px;
+}
+
+.third-cover div:last-child .texty {
+    font-size: 18px;
+    color: #222222;
+    width: 460px;
+    height: 140px;
+    line-height: 1.43;
+    margin: 0;
+    padding: 0px;
+}
+
+/**************************************   fourth Section ******************************************/
+
+.four {
+    height: 412px;
+    background-color: #fff;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+}
+
+.four .fourth-container {
+    height: 376px;
+    width: 1189px;
+    background-color: black;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.inside4 {
+    width: 448px;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0 48px 64px; 
+}
+
+.inside4 div {
+    width: 384px;
+    color: #ffffff;
+}
+
+.inside4 div:nth-child(1) {
+   width: 384px;
+   height: 48px;
+}
+
+.inside4 div:nth-child(2) {
+   height: 72px;
+   margin: 16px 0 0;
+   font-size: 32px;
+}
+
+.inside4 div:nth-child(3) {
+   height: 92px;
+   margin: 8px 0 0 ;
+   font-size: 18px;
+}
+
+.inside4 div:nth-child(4) {
+   height: 24px;
+   margin: 16px 0 0;
+   font-size: 18px;
+}
+
+/*************************************** fifth section ****************************************** */
+
+.fifth{
+    padding: 48px 80px;
+    background-color:
+    
+}
+
+.fifth h3 {
+    font-size: 22px;
+    height: 26px;
+    margin: 0 0 15px;
+    color: #222222;
+}
+
+.row1 {
+    width: 100%;
+    display: flex;
+    margin: 0 -8px;
+}
+
+.column1 {
+    width: 25%;
+    padding: 16px 0px;
+    height: 63px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    margin: 0 8px ;
+    text-transform: capitalize;
+    
+   
+}
+
+.column1 a {
+    color: #222222;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.4s ease;
+}
+
+.column1 a:hover {
+    text-decoration: underline;
+    
+}
+/****************************************** sixth section ************************************ */
+
+.sixth {
+    padding: 0 80px;
+    background-color: #F7F7F7;
+
+}
+
+.sixth .sixth-container {
+    padding: 48px 0;
+}
+
+.row2 {
+    display: flex;
+    width: 100%;
+    margin: 0 -12px;
+}
+.column2 {
+    width: 25%;
+    padding: 0 12px;
+    transition: all 0.4s ease;
+}
+
+.column2 div a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.column2 div {
+    text-transform: capitalize;
+    margin: 14px 0 0;
+    color: #222222;
+    line-height: 18px;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.column2 div:first-child {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.column2 div:first-child a:hover {
+    text-decoration: none;
+    cursor: auto;
+}
+
+.footer {
+    border-top: 1px solid #DDDDDD ;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #222222;
+}
+
+.language {
+    display: flex;
+    justify-content: ;
+    width: 194px;
+    font-weight: 600;
+}
+
+.footer div div span {
+    width: 19px;
+    display: inline-block;
+    text-align: center;
+    height: 20px;
+}
+.footer div div a {
+    text-decoration: none;
+    color: #222222;
+    transition: all 0.4s ease;
+}
+
+.footer div div a:hover {
+    text-decoration: underline;
+    color: #22222280;
+}
+
+.footer .foot-nav ul {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: #00000080;
+}
+
+.footer div ul li i {
+    font-size: 18px;
+} 
+
+.foot-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency {
+    display: flex;
+    justify-content: space-between;
+    width: 44.77px;
+    margin-left: 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    
+}
+
+.currency:hover {
+  color: #22222280;
+}
+
+.lang {
+    display: flex; 
+    width: 110.5px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    
+}
+
+.lang svg {
+    fill:#222222;
+    transition: all 0.1s ease;
+}
+
+.lang:hover, .lang svg:hover {
+    color: #22222280;
+    fill: #22222280;
+}
+
+.foot-nav {
+    width: 102px;
+    margin: 0 0 0 32px;
+    color: #000000;
+   
+}
