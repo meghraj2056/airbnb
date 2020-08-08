@@ -1,18 +1,24 @@
 @media screen and (min-width: 1440px) {
-    body {
-        
-        
-        
-        
-    }
-
+   
     header {
-        width: 1440px;
+        width: 100%;
     }
 
     section {
         width: 1440px;
         display: flex;
         justify-content: center;
+    }
+    .five {
+        width: 100%;
+    }
+    .fifth{
+        width: 1440px;
+    }
+    .six {
+        width: 100%;
+    }
+    .sixth {
+        width: 1440px;
     }
 }
