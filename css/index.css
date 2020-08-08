@@ -17,6 +17,9 @@ body {
     text-decoration: underline;
     text-align: center;
     background-color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.004em;
+    color: #222222;
 }
 
 section {
@@ -393,8 +396,6 @@ nav .search-bar .tab .tab-4:hover  .search {
     padding: 0px 80px;
     margin-top: 26px;
     height: 357.77px;
-    overflow-x : auto;
-    overflow-y: auto;
     
 }
 
@@ -434,7 +435,7 @@ nav .search-bar .tab .tab-4:hover  .search {
 /* *******************************  Online Experiences Section  ***************************** */ 
 
 .onlineexp {
-   
+    width: 100%;
     background-color: #000000;
     
 }
@@ -544,6 +545,7 @@ nav .search-bar .tab .tab-4:hover  .search {
 }
 /********************************  host hero section  *******************************************/
 .third {
+    width: 100%;
     height: 326px;
     display: flex;
 
@@ -607,7 +609,9 @@ h1 {
 }
 
 /**************************************   fourth Section ******************************************/
-
+.fourth {
+  width: 100%;
+}
 .four {
     height: 412px;
     background-color: #fff;
@@ -661,10 +665,14 @@ h1 {
 }
 
 /*************************************** fifth section ****************************************** */
+.five {
+    
+}
 
 .fifth{
+    width: 100%;
     padding: 48px 80px;
-    background-color:
+    
     
 }
 
@@ -704,10 +712,13 @@ h1 {
     
 }
 /****************************************** sixth section ************************************ */
-
+.six {
+   
+}
 .sixth {
     padding: 0 80px;
     background-color: #F7F7F7;
+    width: 100%;
 
 }
 
