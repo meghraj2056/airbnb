@@ -12,6 +12,10 @@ body {
    
 }
 
+.covid-container {
+    width: 100%;
+}
+
 .covid {
     padding: 20px 80px;
     text-decoration: underline;
@@ -20,11 +24,9 @@ body {
     font-weight: 600;
     letter-spacing: 0.004em;
     color: #222222;
-}
-
-section {
     
 }
+
 
 /*  ####################################     Header section   ################################# */
 
@@ -33,7 +35,12 @@ header {
     background-size: cover;
     background-position: center;
     height: 85.5vh;
+    width: 100%;
 }
+.header-container {
+    
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -41,6 +48,7 @@ header {
     color: #ffffff;
     height: 80px;
     margin: 0 80px;
+    
 }
 
 .logo {
@@ -57,7 +65,8 @@ nav {
     display: flex;
     flex-direction: column;
     justify-items: center;                                             
-    align-items: center;  
+    align-items: center; 
+    
 }
 
 
@@ -214,13 +223,13 @@ nav .search-bar {
     width: 16px;  
 }
 
-nav .search-bar .tab:nth-child(1) {
+ .tab:nth-child(1) {
     padding: 14px 32px;
     width: 263.33px;
 }
 
 
-nav .search-bar .tab {
+ .tab {
     padding: 14px 24px;
     height: 64px;
     width: 173.72px;
@@ -230,40 +239,28 @@ nav .search-bar .tab {
    
 }
 
-.tab:nth-child(1)::after {
+.tab:not(:first-child)::after {
     content: "";
     position: absolute;
-    right: 0;
-    width: 1px;
-    height: 32px;
+    left: 0;
     top: 25%;
-    background-color: #ebebeb;
+    height: 32px;
+    width: 1px;
+    background-color: #EBEBEB;
+
 }
 
-.tab:nth-child(2)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 1px;
-    height: 32px;
-    top: 25%;
-    background-color: #ebebeb;
-}
-
-.tab:nth-child(3)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 1px;
-    height: 32px;
-    top: 25%;
-    background-color: #ebebeb;
-}
-
-
-nav .search-bar .tab:hover:nth-child(1) + .tab:nth-child(1)::after {
+.tab:hover::after {
     width: 0px;
- } 
+}
+
+.tab:hover + .tab:after{
+    width: 0px;
+}
+
+.tab:last-child::after {
+    width: 0px;
+}
 
 .tab div:first-child {
     font-weight: 600;
@@ -294,22 +291,22 @@ input {
 
 
 
-nav .search-bar .tab:last-child {
+ .tab:last-child {
     padding: 8px;
     width: 64px;
     border: none;   
 }
 
-nav .search-bar .tab:hover {
+.tab:hover {
     background-color: #EBEBEB;
     border-radius: 32px;
 }
 
-nav .search-bar .tab:last-child:hover {
+.tab:last-child:hover {
     background-color: #ffffff;
 }
 
-nav .search-bar .tab .tab-4 {
+.tab .tab-4 {
     background-color: #FF385C;
     height: 48px;
     width: 48px;
@@ -320,11 +317,11 @@ nav .search-bar .tab .tab-4 {
     
 }
 
-nav .search-bar .tab .tab-4:hover {
+.tab .tab-4:hover {
     background-color: #f01b6d;
 }
 
-nav .search-bar .tab .tab-4:hover  .search {
+.tab .tab-4:hover  .search {
     background-color: #f01b6d;
 }
 .pink-search {
@@ -336,11 +333,17 @@ nav .search-bar .tab .tab-4:hover  .search {
 
 }
 /************************************ Hero text section *******************************************/
+.hero-container {
+    position: relative;
+    height: 70.5vh;
+    padding: 0 80px;
+    display: flex;
+    width: fit-content;
+}
 
 .hero-text {
-    position: absolute;
-    top: 46%;
-    left: 80px;
+    position:absolute;
+    top: 38%;
     color: #fff;
 }
 
@@ -437,15 +440,13 @@ nav .search-bar .tab .tab-4:hover  .search {
 .onlineexp {
     width: 100%;
     background-color: #000000;
+    margin: 54px 0 0;
     
 }
 
 .on-container {
-    height: 870.5px;
     color: #fff;
-    margin: 54px 0 0;
-    padding: 64px 0 ;
-  
+    padding: 64px 0;
 }
 
 .sec-container {
@@ -498,7 +499,6 @@ nav .search-bar .tab .tab-4:hover  .search {
 
 .row {
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: 578.5px 289.25px 289.25px;
     grid-template-rows: 289.25px 289.25px;
     grid-gap: 16px;
