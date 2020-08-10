@@ -236,7 +236,7 @@
     }
     .picture-inside {
         margin: 26px 24px 0 0;
-        overflow-x: auto;
+        
     }
 
     .picture::-webkit-scrollbar {
