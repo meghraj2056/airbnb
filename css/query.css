@@ -78,8 +78,74 @@
         grid-template-columns: 50% 50% ;
         margin: 0 -8px;
     }
-        
     
+    .third {
+        height: 214px;
+    }
+
+    h1 {
+        font-size: 26px;
+        height: 60px;
+        color: #222222;
+        width: 100%;
+    }
+    
+    .third-cover div:nth-child(2) .texty {
+        font-size: 16px;
+        color: #222222;
+        width: 100%;
+        line-height: 24px;
+        margin: 0;
+        padding: 0px;
+    }
+
+    .third-cover div:nth-child(2), .third-cover div:first-child {
+        height: 148px;
+    }
+
+    .four .fourth-container {
+        height: 296px;
+        width: 1189px;
+        background-color: black;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+
+    .inside4 {
+        width: 448px;
+        height: 296px;
+        display: flex;
+        flex-direction: column;
+        padding: 36px 0 36px 36px; 
+    }
+    
+    .inside4 div:nth-child(1) {
+        height: 8px;
+    }
+    
+    .inside4 div:nth-child(2) {
+        height: 72px;
+        margin: 16px 0 0;
+        font-size: 26px;
+    }
+     
+    .inside4 div:nth-child(3) {
+        height: 92px;
+        margin: 8px 0 0 ;
+        font-size: 16px;
+    }
+     
+    .inside4 div:nth-child(4) {
+        height: 24px;
+        margin: 12px 0 0;
+        font-size: 16px;
+    }
+
+    .inside4 div:nth-child(4) i {
+        font-size: 10px;
+    }
+    
+
     .row2 {
         grid-template-columns: 100%;
        
@@ -162,8 +228,9 @@
     .tab {
         
     }
-    .tab:nth-child(1) {
-       
+    
+    h1 {
+        height: 90px;
     }
 }
 
@@ -234,13 +301,9 @@
         overflow-x: auto;
         overflow-y: hidden;
     }
-    .picture-inside {
-        margin: 26px 24px 0 0;
-        
-    }
-
+    
     .picture::-webkit-scrollbar {
-        width: 0;
+       display: none;
     }
 
     .text div:last-child {
@@ -248,19 +311,137 @@
     }
 
     .container {
-        display: grid;
-        grid-template-columns: 42% 42% 42%;
-        gap: 12px;
-        align-items: left;
-        justify-content: left;
-        padding: 4px 24px 8px ;
-        margin: 0px -24px;
-        
+        justify-content: flex-start;  
+        padding: 0 0px 0 14px;   
     }
 
     .image {
+       min-width: 272px; 
+    }
+
+    .on-container {
+        padding: 32px 0;
+    }
+
+    .third-container {
+        margin-bottom: 0px;
+    }
+    
+    .pic div:first-child {
+        font-size: 22px;
+    }
+    .exp-1 {
+        display: none;
+    }
+    .exp-2 {
+        display: block;
+    }
+
+    .meet {
         width: 100%;
-       
+        font-size: 16px;
+    }
+
+    .row {
+        grid-template-columns: 95% 95% 95% 95%;
+        grid-auto-rows: 100% 100%;
+        grid-gap: 16px;
+        margin: 0 0px 0 24px;
+        overflow-x: auto;
+        scroll-snap-type-x: mandatory;
+    }
+
+    .row::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .item1 {
+    
+    }
+
+    .items img {
+        height: 88%;
+    }
+
+    .items {
+        grid-row: 100%;
+        height: 100%;
+        grid-row: 1 / 3;
+    }
+
+    .item4 {
+        grid-column: auto; 
+    }
+
+    .third {
+        height: 232px;
+        align-items: center;
+    }
+
+    .third-cover {
+        flex-direction: column;
+        height: 160px;
+        align-items: flex-start;
+    }
+
+   
+    .third-cover div:first-child {
+        height: fit-content;
+        width: 100% ;
+        font-size: 22px;
+        padding: 0px;
+        
+    }
+
+    .third-cover .get, .third-cover div div:last-child a {
+       display: none;
+    }
+
+    .third-cover .get-hide, .third-cover .get-hide a {
+        display: flex;
+    }
+
+    .third-cover .get-hide a {
+        margin: 12px 0 0 0; 
+    }
+
+    .third-cover div .hero {
+        padding: 0px;
+    }
+
+    .third-cover div:nth-child(2) .texty {
+        font-size: 16px;
+        color: #222222;
+        width: 100%;
+        line-height: 24px;
+        height: fit-content;
+    }
+
+    .third-cover div:nth-child(2) {
+        margin-top: 16px;
+    }
+    
+    h1 {
+        width: 100%;
+        font-size: 22px;
+        height: fit-content;
+    }
+
+    .four {
+        height: 100vw;
+        width: 100%;
+    }
+
+    .four .fourth-container {
+        height: 90%;
+    }
+
+    .inside4 {
+        height: 100%;
+    }
+
+    .inside4 div:nth-child(1) {
+        height: 100%;
     }
 
     .row1 {
