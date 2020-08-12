@@ -239,6 +239,7 @@ nav .nav-links .links {
     align-items: center;
     align-content: center;
     margin-right: 5px;
+    position: relative;
 }
 
 .user-links .location .globe{
@@ -249,6 +250,49 @@ nav .nav-links .links {
 .user-links .location:hover {
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 22px;
+}
+
+.on-click-text {
+    position: absolute;
+    right: 0%;
+    top: 115%;
+    background-color: #fff;
+    color: #484848;
+    font-weight: 600;
+    width: 180px;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+    display: none;
+}
+
+
+.globe-top svg  {
+    fill: #484848;
+}
+
+.globe-top {
+    display: flex;
+    padding: 15px 20px;
+    margin-top: 8px;
+}
+
+.globe-top div {
+    margin-left: 5px;
+}
+
+.top-currency {
+    display: flex;
+    padding: 15px 20px 15px 24px;
+    margin-bottom: 8px;
+}
+
+.top-currency div:last-child {
+    margin-left: 10px;
+}
+
+.globe-top:hover, .top-currency:hover {
+    background-color: #EBEBEB;
 }
 
 .user-links .user {
