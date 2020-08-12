@@ -602,6 +602,7 @@ input {
 .row {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 16px;
 
 }
@@ -610,28 +611,36 @@ input {
     font-size: 16px;
     background-color: #222222;
     border-radius: 16px;
- 
 }
 
 .items img {
     border-radius: 16px 16px 0 0;
     width: 100%;
-    height: 90%;
-   
 }
-.items div {
-    margin: 16px;
-    line-height: 20px;
-   
+
+.item1 img {
+    height: 87% ;
 }
 
 .item4 img {
-   
+    height: 100% ;
 }
 
 
+.items div {
+    line-height: 20px;
+    margin: 16px;
+    height: 76px;
+   
+}
+.item4 div {
+    width: 50%;
+}
 .item1 {
    grid-row: 1 / 3;
+}
+.item2 img, .item3 img {
+    height: 80%;
 }
 
 .item4 {

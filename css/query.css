@@ -312,7 +312,6 @@
 
     .picture {
         overflow-x: auto;
-        overflow-y: scroll;
     }
     
     .picture::-webkit-scrollbar {
@@ -357,12 +356,24 @@
 
     .row {
         grid-template-columns: 95% 95% 95% 95%;
-        grid-auto-rows: 100% 0;
         grid-gap: 16px;
         margin: 0 0px 0 24px;
         overflow-x: auto;
         overflow-y: hidden;
+        height: 100vw;
     }
+
+    .item4 div {
+        width: auto;
+    }
+
+    .items div {
+        line-height: 15px;
+        height: 60px;
+        
+       
+    }
+
     .item4 {
         display: block;
     }
@@ -499,4 +510,79 @@
     .third {
         height: 60vw;
     }
+
+    .items div {
+        margin: 16px 16px;
+        height: fit-content;
+    }
+
+    .row {
+        height: 120vw;
+    }
+}   
+
+@media screen and (max-width: 425px) {
+    header {
+        background-position: center;
+        height: 100vh;
+    }
+
+    .row {
+        height: 120vw;
+    }
+    
+    .third {
+        height: 70vw;
+    }   
+    
+    .inside4 div:nth-child(1) {
+        height: 0%;
+    }
+
+    .inside4 div:nth-child(3){
+        width: 100%;
+    }
+   
+}
+@media screen and (max-width: 375px) {
+
+    .third {
+        height: 100vw;
+    }
+    .third-cover {
+        margin-top: 20px 0;
+    }
+
+    .row {
+        /* grid-template-rows: 30vw 30vw;  */
+        height: 120vw;
+    }
+
+    .items div {
+        margin: 10px 16px;
+    }
+    
+       
+}
+@media screen and (max-width: 320px) {
+   
+    .third {
+        height: 120vw;
+    }
+    .third-cover {
+        margin-top: 20px 0;
+    }
+    
+    .inside4 div:nth-child(3){
+        height: fit-content;
+    } 
+
+    .items div {
+        margin: 5px 16px;
+    }
+
+    .items {
+        width: 100%;
+    }
+    
 }
