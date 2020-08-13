@@ -697,15 +697,6 @@ input {
     height: calc(100% - 76px); 
 }
 
-.item1 img {
-    /* height: 87% ; */
-}
-
-.item4 img {
-    /* height: 100% ; */
-}
-
-
 .items div {
     line-height: 20px;
     padding: 16px;
@@ -716,12 +707,10 @@ input {
 .item4 div {
     width: 60%;
 }
+
 .item1 {
    grid-row: 1 / 3;
 
-}
-.item2 img, .item3 img {
-    /* height: 80%; */
 }
 
 .item4 {

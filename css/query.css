@@ -311,10 +311,10 @@
     } 
 
     .picture {
-        overflow-x: auto;
+        padding: 0 24px; 
     }
     
-    .picture::-webkit-scrollbar {
+    .container::-webkit-scrollbar {
        display: none;
     }
 
@@ -323,12 +323,20 @@
     }
 
     .container {
+        display: grid;
+        grid-template-columns: 272px 272px 272px;
+        grid-gap: 10px;
         justify-content: flex-start;  
-        padding: 0 0px 0 14px;   
+        padding: 0 0px; 
+        overflow-x: auto;
+       
+         
     }
 
     .image {
        min-width: 272px; 
+       margin: 20px 0 10px 0;
+       
     }
 
     .on-container {
