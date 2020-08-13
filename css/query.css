@@ -370,6 +370,7 @@
     .items div {
         line-height: 15px;
         height: 60px;
+        margin: 0 0 ;
         
        
     }
@@ -383,7 +384,7 @@
     }
 
     .items img {
-        height: 88%;
+       
     }
 
     .items {
@@ -505,6 +506,10 @@
     .third {
         height: 45vw;
     }
+
+    .items div {
+        margin: 0;
+    }
 }
 @media screen and (max-width: 548px) {
     .third {
@@ -518,6 +523,10 @@
 
     .row {
         height: 120vw;
+    }
+
+    .items div {
+        margin: 0;
     }
 }   
 
@@ -542,6 +551,10 @@
     .inside4 div:nth-child(3){
         width: 100%;
     }
+
+    .items div {
+        margin: 0;
+    }
    
 }
 @media screen and (max-width: 375px) {
@@ -559,7 +572,7 @@
     }
 
     .items div {
-        margin: 10px 16px;
+        margin: 0;
     }
     
        
@@ -578,7 +591,7 @@
     } 
 
     .items div {
-        margin: 5px 16px;
+        margin: 0;
     }
 
     .items {
