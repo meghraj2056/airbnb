@@ -36,16 +36,16 @@ window.addEventListener('scroll', () => {
 
 
 
-//     if (clientHeight - windowHeight - 100 < currentScrollHeight) {
-//         bottomNav.style.height = 0;
-//     } else {
+    if (clientHeight - windowHeight - 100 < currentScrollHeight) {
+        bottomNav.style.height = 0;
+    } else {
 
-//         bottomNav.style.height = "64px";
-//     }
-
-
-//     console.log(currentScrollHeight);
+        bottomNav.style.height = "64px";
+    }
 
 
-// })
+    console.log(currentScrollHeight);
+
+
+})
 
