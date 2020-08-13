@@ -24,14 +24,14 @@ window.addEventListener('scroll', () => {
     const currentScrollHeight = window.pageYOffset;
 
 
-    if (currentScrollHeight > 66) {
-        stickyNav.style.display = "block";
-        realnav.style.display = "none";
-    } else {
-        stickyNav.style.display = "none";
-        realnav.style.display = "flex";
+    // if (currentScrollHeight > 66) {
+    //     stickyNav.style.display = "block";
+    //     realnav.style.display = "none";
+    // } else {
+    //     stickyNav.style.display = "none";
+    //     realnav.style.display = "flex";
 
-    }
+    // }
 
 
 
