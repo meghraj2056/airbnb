@@ -1,51 +1,20 @@
-const loc = document.querySelector('.location')
-const nav = document.querySelector('.on-click-text')
-const body = document.querySelector('body')
-const bottomNav = document.querySelector('.bottom-nav')
-
-const stickyNav = document.querySelector('.top')
-
-const realnav = document.querySelector('.header')
-
-loc.addEventListener("click", () => {
-    if (nav.style.display === "none") {
-        nav.style.display = "block";
-    }
-    else {
-        nav.style.display = "none";
-    }
-
+const search = document.querySelector(".pink-search");
+const loc = document.querySelector(
+  "body > header > div > div.header > div.user-links > div.location"
+);
+search.addEventListener("click", (e) => {
+  const input = document.querySelector(".tab input");
+  input.focus();
+  console.log(input);
 });
 
-window.addEventListener('scroll', () => {
-    const clientHeight = document.body.clientHeight;
-    const windowHeight = window.innerHeight;
-
-    const currentScrollHeight = window.pageYOffset;
-
-
-    // if (currentScrollHeight > 66) {
-    //     stickyNav.style.display = "block";
-    //     realnav.style.display = "none";
-    // } else {
-    //     stickyNav.style.display = "none";
-    //     realnav.style.display = "flex";
-
-    // }
-
-
-
-
-    if (clientHeight - windowHeight - 100 < currentScrollHeight) {
-        bottomNav.style.height = 0;
-    } else {
-
-        bottomNav.style.height = "64px";
-    }
-
-
-    console.log(currentScrollHeight);
-
-
-})
-
+loc.addEventListener("click", (e) => {
+  const clickText = document.querySelector(
+    "body > header > div > div.header > div.user-links > div.location > div.on-click-text"
+  );
+  if (clickText.style.display === "none") {
+    clickText.style.display = "block";
+  } else {
+    clickText.style.display = "none";
+  }
+});
